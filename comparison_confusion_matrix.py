@@ -3,7 +3,6 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.metrics import confusion_matrix
-%matplotlib inline
 
 def get_cm_in_proc(cm):
     tp, fn, fp, tn = cm.ravel()
@@ -49,7 +48,7 @@ def confusion_matrix_comparison_plot(actual, model_1, model_2):
         axis.set_xlabel(x_label, fontsize = 14)
         axis.set_ylabel(y_label, fontsize = 14)    
         axis.yaxis.set_ticklabels([positive_label, negative_label])
-        axis.xaxis.set_ticklabels([positive_label, negative_label]);
+        axis.xaxis.set_ticklabels([positive_label, negative_label])
         
 actual = [0, 1, 0, 1, 1, 1]
 model_1 = [1, 1, 1, 0, 1, 1]
